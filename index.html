@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Tình yêu ngọt ngào</title>
+  <title>Tình yêu của anh</title>
   <style>
     body {
       margin: 0;
@@ -45,7 +45,6 @@
       height: 180px;
       filter: drop-shadow(0 0 5px #ff6ec7);
     }
-    /* Trái tim phía sau QR */
     #heart-bg {
       position: absolute;
       width: 180px;
@@ -53,43 +52,4 @@
       top: 0;
       left: 0;
       pointer-events: none;
-      background: url('data:image/svg+xml;utf8,<svg viewBox="0 0 32 29.6" xmlns="http://www.w3.org/2000/svg"><path fill="%23ff6ec7" d="M23.6 0c-3.4 0-6.4 2.3-7.6 5.5C14.8 2.3 11.8 0 8.4 0 3.8 0 0 3.8 0 8.4c0 4.8 4.2 8.8 10.5 14.8l5.5 4.9 5.5-4.9C27.8 17.2 32 13.2 32 8.4 32 3.8 28.2 0 23.6 0z"/></svg>') no-repeat center;
-      background-size: contain;
-      opacity: 0.15;
-      z-index: 0;
-    }
-    #qrcode > canvas {
-      position: relative;
-      z-index: 1;
-    }
-  </style>
-</head>
-<body>
-  <div class="marquee-container">
-    <div class="marquee">
-      Anh yêu em - Mãi bên nhau - Tình yêu vĩnh cửu - Em là tất cả - Trái tim anh dành cho em
-    </div>
-  </div>
-
-  <div id="qrcode-container" style="position: relative; width: 180px; height: 180px;">
-    <div id="heart-bg"></div>
-    <div id="qrcode"></div>
-  </div>
-
-  <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
-  <script>
-    const qrcodeContainer = document.getElementById('qrcode');
-    const loveText = "Tình yêu là mãi mãi, trái tim anh chỉ dành cho em.";
-    QRCode.toCanvas(qrcodeContainer, loveText, {
-      width: 180,
-      color: {
-        dark: '#ff6ec7',
-        light: '#00000000'
-      },
-      margin: 1,
-    }, function (error) {
-      if (error) console.error(error);
-    });
-  </script>
-</body>
-</html>
+      background: url('data:image/svg+xml;utf8,<svg viewBox="0 0 32 29.6" xmlns="http://www.w3.org/2000/svg"><path fill="%23ff6ec7" d="M23.6 0c-3.4 0-6.4 2.3-7.6 5.5C14.8 2.3 11.8 0 8.4 0 3.8 0 0 3.8 0 8.4c0 4.8 4.2 8.8 10
